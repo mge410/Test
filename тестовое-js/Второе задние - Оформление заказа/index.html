@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7006b0a8-9569-4092-b81b-8d97c379cc4b&lang=ru_RU" type="text/javascript">
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="" class="form" id="form">
+            <div class="form__conteiner">
+                <div class="form__line">
+                    <div class="form__label">Фио *</div>
+                    <input type="text" class="form__input __req" placeholder="Фио">
+                </div>
+                <div class="form__line">
+                    <div class="form__label">Телефон *</div>
+                    <input type="tel" class="form__input _tel __req" placeholder="Телефон">
+                </div>
+                <div class="form__line">
+                    <div class="form__label">Почта</div>
+                    <input type="email" class="form__input _email __req" placeholder="email">
+                </div>
+                <div id="map" style="width: 440px; height: 200px; margin-left: 10px"></div>
+                <div class="form__line">
+                    <div class="form__label">Почта</div>
+                    <input type="text" class="form__input-textarea __req _com" placeholder="Комментарий к заказу (макс. 500 сиволов)">
+                </div>
+                <button type="submit" class="form__button" >Отправить</button>
+                <div class="error_label" id="textError">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
